@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+body {
+  font-family: "Robot", sans-serif;
+  font-size: 110%;
+}
+
+.form-container {
+  border-radius: 10px;
+  box-shadow: 1px 1px 23px -1px rgba(0, 0, 0, 0.56);
+}
+
+.submit_button {
+  width: 100%;
+  background-color: grey;
+  color: black;
+  margin: 0.6rem 0;
+  border: none;
+  border-radius: 5px;
+  height: 2.5rem;
+}
+
+.form-group input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-group.success input {
+  border-color: var(--success-color);
+}
+
+.form-group.error input {
+  border-color: var(--error-color);
+}
+
+.form-group small {
+  /* display: none; */
+  visibility: hidden;
+  color: var(--error-color);
+}
+
+.form-group.error small {
+  visibility: visible;
+}
